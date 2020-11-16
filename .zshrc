@@ -41,7 +41,7 @@ then
 fi
 
 # Allow history search via up/down keys.
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ${0:A:h}/history-substring-search.zsh
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 
